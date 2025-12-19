@@ -66,3 +66,13 @@ while left < right:
         right = mid
 return nums[left]
 ```
+
+## Flatten a 2D matrix
+```python
+rows = len(matrix)
+columns = len(matrix[0])
+
+row = index // columns
+col = index % columns
+```
+
