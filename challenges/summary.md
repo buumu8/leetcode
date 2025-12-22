@@ -76,3 +76,9 @@ row = index // columns
 col = index % columns
 ```
 
+## Array of unknown size
+```python
+while valueOf(right) < target:
+    left = right
+    right *= 2
+```
