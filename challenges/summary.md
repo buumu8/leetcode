@@ -68,6 +68,7 @@ return nums[left]
 ```
 
 ## Flatten a 2D matrix
+
 ```python
 rows = len(matrix)
 columns = len(matrix[0])
@@ -77,8 +78,22 @@ col = index % columns
 ```
 
 ## Array of unknown size
+
 ```python
 while valueOf(right) < target:
     left = right
     right *= 2
+```
+
+### Perfect divide an array
+
+```python
+    left,right = 0, length(nums) - 1
+    while left<right:
+        length = right - left + 1
+        mid = (left + right) // 2
+        if length % 2 == 0:
+            c = compare(left,mid,mid+1,right)
+        else:
+            c = compare(left,mid-1,mid+1,right)
 ```
